@@ -22,7 +22,8 @@
     if (cfg.address) set("address", cfg.address);
     if (cfg.timings) set("timings", cfg.timings);
     set("phone", cfg.phoneDisplay || cfg.phone || "+91 XXXXX XXXXX", cfg.phone ? `tel:+${cfg.phone}` : "#contact");
-    set("email", cfg.email || "hello@example.com", cfg.email ? `mailto:${cfg.email}` : "#contact");
+    if (cfg.email) set("email", cfg.email, `mailto:${cfg.email}`);
+    else $$('[data-config="email"]').forEach(el => el.closest("li")?.remove());
     const wa = $("#whatsappFab");
     const waNumber = cfg.whatsapp || cfg.phone;
     if (waNumber) wa.href = `https://wa.me/${waNumber}?text=${encodeURIComponent("Hello! I'd like to enquire about a stay at Cherry Blossom Retreat.")}`;
