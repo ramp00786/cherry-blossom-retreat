@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cherry Blossom Retreat — Homestay in Kollam, Kerala</title>
+  <meta name="description" content="Cherry Blossom Retreat is a peaceful homestay in Kollam, Kerala — warm hospitality, home-cooked Kerala food and easy access to Ashtamudi Lake, Kollam Beach and Munroe Island." />
+  <meta name="theme-color" content="#0c1a17" />
+  <meta property="og:title" content="Cherry Blossom Retreat — Homestay in Kollam, Kerala" />
+  <meta property="og:description" content="A calm, blossom-soft home by the backwaters of Kollam." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌸%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__flower">
+      <svg viewBox="0 0 100 100"><g class="pl-petals">
+        <path d="M50 50 C38 34 40 14 50 8 C60 14 62 34 50 50Z"/>
+        <path d="M50 50 C38 34 40 14 50 8 C60 14 62 34 50 50Z" transform="rotate(72 50 50)"/>
+        <path d="M50 50 C38 34 40 14 50 8 C60 14 62 34 50 50Z" transform="rotate(144 50 50)"/>
+        <path d="M50 50 C38 34 40 14 50 8 C60 14 62 34 50 50Z" transform="rotate(216 50 50)"/>
+        <path d="M50 50 C38 34 40 14 50 8 C60 14 62 34 50 50Z" transform="rotate(288 50 50)"/>
+      </g><circle cx="50" cy="50" r="5" fill="#d9a441"/></svg>
+    </div>
+    <p class="preloader__name">Cherry Blossom Retreat</p>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- custom cursor (desktop) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" data-scroll>
+      <span class="nav__logo">🌸</span>
+      <span>Cherry Blossom <em>Retreat</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-scroll>About</a>
+      <a href="#rooms" data-scroll>Rooms</a>
+      <a href="#amenities" data-scroll>Amenities</a>
+      <a href="#gallery" data-scroll>Gallery</a>
+      <a href="#explore" data-scroll>Explore Kollam</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <a href="#book" class="btn btn--small magnetic" data-scroll><span>Book a Stay</span></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== HERO (three.js) ========== -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas" class="hero__canvas"></canvas>
+      <div class="hero__veil"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span class="line"></span> Homestay · Kollam, Keralam</p>
+        <h1 class="hero__title">
+          <span class="hero__row"><span class="split">Cherry</span></span>
+          <span class="hero__row"><span class="split italic">Blossom</span></span>
+          <span class="hero__row"><span class="split">Retreat</span></span>
+        </h1>
+        <p class="hero__sub">Wake up to coconut palms, backwater breezes and the slow, golden rhythm of God's Own Country.</p>
+        <div class="hero__cta">
+          <a href="#book" class="btn magnetic" data-scroll><span>Check Availability</span></a>
+          <a href="#about" class="btn btn--ghost magnetic" data-scroll><span>Discover More</span></a>
+        </div>
+      </div>
+      <div class="hero__scroll"><span>Scroll</span><i></i></div>
+      <div class="hero__coords">8.8932° N · 76.6141° E</div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Backwaters</span><b>✿</b><span>Home-cooked Kerala Meals</span><b>✿</b><span>Ashtamudi Lake</span><b>✿</b><span>Coconut Groves</span><b>✿</b><span>Warm Hospitality</span><b>✿</b><span>Kollam Beach</span><b>✿</b>
+        <span>Backwaters</span><b>✿</b><span>Home-cooked Kerala Meals</span><b>✿</b><span>Ashtamudi Lake</span><b>✿</b><span>Coconut Groves</span><b>✿</b><span>Warm Hospitality</span><b>✿</b><span>Kollam Beach</span><b>✿</b>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow">Welcome Home</p>
+          <h2 class="reveal-words">A quiet little home in Kollam, where every morning smells of filter coffee, jasmine and the sea breeze.</h2>
+          <p class="fade-up">Cherry Blossom Retreat is a family-run homestay in the heart of Kollam — the gateway to Kerala's backwaters. Here you don't just book a room; you are welcomed like family, served authentic home-style Kerala food and guided to the hidden gems of the Ashtamudi coast.</p>
+          <p class="fade-up">Whether you are a couple looking for calm, a family on holiday, or a traveller exploring Kerala, our clean, comfortable rooms and personal care make every stay feel like coming home.</p>
+          <div class="about__sign fade-up">
+            <span class="sig">with love,</span>
+            <span>Your hosts at Cherry Blossom Retreat</span>
+          </div>
+        </div>
+        <div class="about__media">
+          <figure class="frame frame--tall parallax-img" data-speed="-12">
+            <img src="images/about-1.jpg" alt="Cherry Blossom Retreat exterior" loading="lazy" />
+            <figcaption class="ph-label">The Retreat</figcaption>
+          </figure>
+          <figure class="frame frame--small parallax-img" data-speed="18">
+            <img src="images/about-2.jpg" alt="Cosy room interior" loading="lazy" />
+            <figcaption class="ph-label">Cosy Interiors</figcaption>
+          </figure>
+          <div class="about__badge">
+            <svg viewBox="0 0 200 200" class="rotating-text">
+              <defs><path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0"/></defs>
+              <text><textPath href="#circlePath">• Homestay • Kollam • Kerala • Since day one</textPath></text>
+            </svg>
+            <span>🌸</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES STRIP ========== -->
+    <section class="features">
+      <div class="container features__grid">
+        <div class="feature fade-up"><span class="feature__num">01</span><h3>Family Hospitality</h3><p>Personal attention from hosts who treat you like family.</p></div>
+        <div class="feature fade-up"><span class="feature__num">02</span><h3>Kerala Kitchen</h3><p>Appam, puttu, fish curry &amp; more — fresh and home-made.</p></div>
+        <div class="feature fade-up"><span class="feature__num">03</span><h3>Calm &amp; Green</h3><p>A peaceful neighbourhood surrounded by greenery.</p></div>
+        <div class="feature fade-up"><span class="feature__num">04</span><h3>Easy to Explore</h3><p>Lake, beach, lighthouse and backwaters close by.</p></div>
+      </div>
+    </section>
+
+    <!-- ========== ROOMS ========== -->
+    <section class="rooms section" id="rooms">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Stay With Us</p>
+          <h2 class="split-lines">Rooms made for <em>slow</em> mornings</h2>
+          <p class="section-head__sub fade-up">Clean, airy and thoughtfully furnished — each room is a soft landing after a day of exploring.</p>
+        </div>
+        <div class="rooms__grid">
+          <article class="room tilt">
+            <div class="room__img frame"><img src="images/room-1.jpg" alt="Deluxe Double Room" loading="lazy" /><figcaption class="ph-label">Deluxe Double</figcaption></div>
+            <div class="room__body">
+              <div class="room__tags"><span>2 Guests</span><span>Double Bed</span><span>A/C</span></div>
+              <h3>Deluxe Double Room</h3>
+              <p>A bright, comfortable room with a plush double bed, private bathroom and garden-facing windows.</p>
+              <a href="#book" class="room__link" data-scroll>Reserve <span>→</span></a>
+            </div>
+          </article>
+          <article class="room tilt">
+            <div class="room__img frame"><img src="images/room-2.jpg" alt="Family Room" loading="lazy" /><figcaption class="ph-label">Family Room</figcaption></div>
+            <div class="room__body">
+              <div class="room__tags"><span>Family</span><span>Spacious</span><span>A/C</span></div>
+              <h3>Family Room</h3>
+              <p>Extra space for the whole family — ideal for holidays, with room to relax together after a day out.</p>
+              <a href="#book" class="room__link" data-scroll>Reserve <span>→</span></a>
+            </div>
+          </article>
+          <article class="room tilt">
+            <div class="room__img frame"><img src="images/room-3.jpg" alt="Garden View Room" loading="lazy" /><figcaption class="ph-label">Garden View</figcaption></div>
+            <div class="room__body">
+              <div class="room__tags"><span>2 Guests</span><span>Garden View</span><span>Wi-Fi</span></div>
+              <h3>Garden View Room</h3>
+              <p>Open the windows to green leaves and birdsong — a calm retreat for couples and solo travellers.</p>
+              <a href="#book" class="room__link" data-scroll>Reserve <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AMENITIES ========== -->
+    <section class="amenities section" id="amenities">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <p class="eyebrow">Amenities</p>
+          <h2 class="split-lines">Everything you need, <em>nothing</em> you don't</h2>
+        </div>
+        <div class="amenities__grid">
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg><h4>Free Wi-Fi</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-6h9L18 17M8 11l1-4h6l1 4"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></svg><h4>Free Parking</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg><h4>Air Conditioning</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M4 11h16a8 8 0 0 1-16 0ZM12 3c-1 1.5 1 2.5 0 4M8 4c-1 1.5 1 2.5 0 4M16 4c-1 1.5 1 2.5 0 4"/></svg><h4>Home-cooked Food</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M12 2c3 4 6 6 6 10a6 6 0 0 1-12 0c0-4 3-6 6-10Z"/></svg><h4>Hot Water</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12c0-5 4-8 8-8 0 5-3 8-8 8ZM12 14c0-4-3-6-7-6 0 4 3 6 7 6Z"/></svg><h4>Garden &amp; Sit-out</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h4>Television</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><h4>24×7 Assistance</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18V9l7-5 7 5v9M10 18v-5h4v5"/></svg><h4>Family Friendly</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M3 17c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 12c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg><h4>Backwater Trips*</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M5 17h14l-2-6H7l-2 6ZM7 11l1-4h8l1 4M6 20v-3M18 20v-3"/></svg><h4>Taxi on Request*</h4></div>
+          <div class="amenity"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M9 4v16"/></svg><h4>Clean Linen Daily</h4></div>
+        </div>
+        <p class="amenities__note">* Arranged on request. Please confirm amenities with the host while booking.</p>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY (pinned horizontal) ========== -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__pin">
+        <div class="gallery__intro">
+          <p class="eyebrow">Gallery</p>
+          <h2>Moments at<br/><em>the Retreat</em></h2>
+          <p>Scroll to wander through the home, the rooms and the coast around us.</p>
+          <div class="gallery__progress"><span id="galleryProgress"></span></div>
+        </div>
+        <div class="gallery__track" id="galleryTrack">
+          <figure class="g-item frame"><img src="images/gallery-1.jpg" alt="Homestay front view" loading="lazy" /><figcaption class="ph-label">Front View</figcaption><span class="g-num">01</span></figure>
+          <figure class="g-item g-item--tall frame"><img src="images/gallery-2.jpg" alt="Bedroom" loading="lazy" /><figcaption class="ph-label">Bedroom</figcaption><span class="g-num">02</span></figure>
+          <figure class="g-item frame"><img src="images/gallery-3.jpg" alt="Sit-out area" loading="lazy" /><figcaption class="ph-label">Sit-out</figcaption><span class="g-num">03</span></figure>
+          <figure class="g-item g-item--tall frame"><img src="images/gallery-4.jpg" alt="Bathroom" loading="lazy" /><figcaption class="ph-label">Bathroom</figcaption><span class="g-num">04</span></figure>
+          <figure class="g-item frame"><img src="images/gallery-5.jpg" alt="Dining area" loading="lazy" /><figcaption class="ph-label">Dining</figcaption><span class="g-num">05</span></figure>
+          <figure class="g-item g-item--tall frame"><img src="images/gallery-6.jpg" alt="Garden" loading="lazy" /><figcaption class="ph-label">Garden</figcaption><span class="g-num">06</span></figure>
+          <figure class="g-item frame"><img src="images/gallery-7.jpg" alt="Ashtamudi backwaters" loading="lazy" /><figcaption class="ph-label">Backwaters</figcaption><span class="g-num">07</span></figure>
+          <figure class="g-item g-item--tall frame"><img src="images/gallery-8.jpg" alt="Kollam beach sunset" loading="lazy" /><figcaption class="ph-label">Sunset</figcaption><span class="g-num">08</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== A DAY AT THE RETREAT (timeline) ========== -->
+    <section class="day section" id="day">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">A Day Here</p>
+          <h2 class="split-lines">From <em>sunrise</em> to starlight</h2>
+        </div>
+        <div class="timeline">
+          <svg class="timeline__line" viewBox="0 0 4 1000" preserveAspectRatio="none"><path id="timelinePath" d="M2 0 V1000"/></svg>
+          <div class="t-item">
+            <div class="t-time">06:30</div>
+            <div class="t-card"><h3>Golden Mornings</h3><p>Wake to birdsong and a hot cup of Kerala filter coffee on the sit-out.</p></div>
+          </div>
+          <div class="t-item t-item--right">
+            <div class="t-time">08:30</div>
+            <div class="t-card"><h3>Kerala Breakfast</h3><p>Soft appam with stew, puttu and kadala — cooked fresh at home.</p></div>
+          </div>
+          <div class="t-item">
+            <div class="t-time">11:00</div>
+            <div class="t-card"><h3>Backwater Wander</h3><p>Glide through the canals of Munroe Island or across Ashtamudi Lake.</p></div>
+          </div>
+          <div class="t-item t-item--right">
+            <div class="t-time">17:30</div>
+            <div class="t-card"><h3>Sunset by the Sea</h3><p>Watch the sky turn pink at Kollam Beach and the Thangassery lighthouse.</p></div>
+          </div>
+          <div class="t-item">
+            <div class="t-time">20:00</div>
+            <div class="t-card"><h3>Dinner &amp; Stars</h3><p>A home-style dinner, quiet conversation and a peaceful night's sleep.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPLORE KOLLAM (stacked cards) ========== -->
+    <section class="explore section" id="explore">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <p class="eyebrow">Explore Kollam</p>
+          <h2 class="split-lines">The <em>Gateway</em> to Kerala's backwaters</h2>
+        </div>
+        <div class="stack">
+          <article class="stack__card" style="--c1:#1f4d45;--c2:#0f2a26">
+            <div class="stack__text"><span class="stack__idx">01</span><h3>Ashtamudi Lake</h3><p>Kerala's second-largest lake, with eight arms of shimmering backwater, Chinese fishing nets and houseboat cruises.</p></div>
+            <div class="stack__img frame"><img src="images/explore-ashtamudi.jpg" alt="Ashtamudi Lake" loading="lazy" /><figcaption class="ph-label">Ashtamudi Lake</figcaption></div>
+          </article>
+          <article class="stack__card" style="--c1:#6b2e45;--c2:#3a1626">
+            <div class="stack__text"><span class="stack__idx">02</span><h3>Munroe Island</h3><p>A cluster of tiny islands laced with narrow canals — best explored by country canoe at sunrise.</p></div>
+            <div class="stack__img frame"><img src="images/explore-munroe.jpg" alt="Munroe Island" loading="lazy" /><figcaption class="ph-label">Munroe Island</figcaption></div>
+          </article>
+          <article class="stack__card" style="--c1:#7a5420;--c2:#3d2a10">
+            <div class="stack__text"><span class="stack__idx">03</span><h3>Kollam Beach &amp; Thangassery</h3><p>Golden sands, evening snacks and the red-and-white Thangassery lighthouse beside old Portuguese ruins.</p></div>
+            <div class="stack__img frame"><img src="images/explore-beach.jpg" alt="Kollam Beach" loading="lazy" /><figcaption class="ph-label">Kollam Beach</figcaption></div>
+          </article>
+          <article class="stack__card" style="--c1:#2c3e6b;--c2:#141d36">
+            <div class="stack__text"><span class="stack__idx">04</span><h3>Jatayu Earth's Center</h3><p>A spectacular rock-top park at Chadayamangalam, home to one of the world's largest bird sculptures.</p></div>
+            <div class="stack__img frame"><img src="images/explore-jatayu.jpg" alt="Jatayu Earth's Center" loading="lazy" /><figcaption class="ph-label">Jatayu Earth's Center</figcaption></div>
+          </article>
+          <article class="stack__card" style="--c1:#2d5a32;--c2:#142a17">
+            <div class="stack__text"><span class="stack__idx">05</span><h3>Palaruvi &amp; Thenmala</h3><p>A milky waterfall in the forest and Kerala's first planned eco-tourism destination, a scenic day trip away.</p></div>
+            <div class="stack__img frame"><img src="images/explore-palaruvi.jpg" alt="Palaruvi Waterfalls" loading="lazy" /><figcaption class="ph-label">Palaruvi Falls</figcaption></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BOOK ========== -->
+    <section class="book section" id="book">
+      <canvas class="book__petals" id="bookPetals"></canvas>
+      <div class="container book__inner">
+        <p class="eyebrow">Reserve Your Stay</p>
+        <h2 class="book__title"><span class="split-lines">Your Kerala</span><span class="split-lines"><em>story</em> begins here</span></h2>
+        <p class="book__sub fade-up">Book instantly on your favourite platform, or reach out directly for the best rates and personal assistance.</p>
+        <div class="book__platforms">
+          <a class="platform magnetic" target="_blank" rel="noopener" href="https://www.booking.com/hotel/in/cherry-blossom-retreat.en-gb.html"><strong>Booking.com</strong><span>Book now ↗</span></a>
+          <a class="platform magnetic" target="_blank" rel="noopener" href="https://www.agoda.com/cherry-blossom-retreat/hotel/kollam-in.html"><strong>Agoda</strong><span>Book now ↗</span></a>
+          <a class="platform magnetic" target="_blank" rel="noopener" href="https://www.makemytrip.com/hotels/cherry_blossom_retreat-details-kollam.html"><strong>MakeMyTrip</strong><span>Book now ↗</span></a>
+          <a class="platform magnetic" target="_blank" rel="noopener" href="https://www.google.com/search?q=Cherry+Blossom+Retreat+Kollam"><strong>Google</strong><span>Reviews ↗</span></a>
+        </div>
+
+        <form class="enquiry" id="enquiry">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required placeholder="Your name" /></div>
+          <div class="field"><label for="f-in">Check-in</label><input id="f-in" name="checkin" type="date" required /></div>
+          <div class="field"><label for="f-out">Check-out</label><input id="f-out" name="checkout" type="date" required /></div>
+          <div class="field field--sm"><label for="f-guests">Guests</label><select id="f-guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+          <button class="btn magnetic" type="submit"><span>Enquire on WhatsApp</span></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT / MAP ========== -->
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow">Find Us</p>
+          <h2 class="split-lines">Come say <em>hello</em></h2>
+          <ul class="contact__list">
+            <li><span>Address</span><p data-config="address">Cherry Blossom Retreat, Kollam, Kerala, India</p></li>
+            <li><span>Phone</span><p><a data-config="phone" href="#">+91 XXXXX XXXXX</a></p></li>
+            <li><span>Email</span><p><a data-config="email" href="#">hello@example.com</a></p></li>
+            <li><span>Check-in / out</span><p data-config="timings">Check-in 12:00 PM · Check-out 11:00 AM</p></li>
+          </ul>
+          <a class="btn btn--ghost-dark magnetic" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cherry+Blossom+Retreat+Kollam"><span>Get Directions</span></a>
+        </div>
+        <div class="contact__map frame">
+          <iframe title="Map — Cherry Blossom Retreat, Kollam" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Cherry+Blossom+Retreat+Kollam+Kerala&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__big">Cherry Blossom <em>Retreat</em></h2>
+      <div class="footer__row">
+        <p>Homestay in Kollam, Keralam · India</p>
+        <nav>
+          <a href="#about" data-scroll>About</a>
+          <a href="#rooms" data-scroll>Rooms</a>
+          <a href="#gallery" data-scroll>Gallery</a>
+          <a href="#book" data-scroll>Book</a>
+        </nav>
+        <p>© <span id="year"></span> Cherry Blossom Retreat</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" id="whatsappFab" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.3 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.7-.4Z"/></svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/ScrollToPlugin.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
