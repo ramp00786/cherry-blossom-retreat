@@ -136,16 +136,16 @@ h3 { font-size: clamp(1.5rem, 2.2vw, 1.9rem); }
   radial-gradient(ellipse at 20% 60%, rgba(12,26,23,.55), transparent 60%),
   linear-gradient(to bottom, rgba(12,26,23,.35), transparent 30%, transparent 70%, rgba(12,26,23,.6)); }
 /* in-flow (not absolute) so a tall title on short viewports pushes the hero taller instead of sliding under the fixed nav */
-.hero__content { position: relative; margin: 0 1.4rem 0 clamp(1.4rem, 6vw, 6rem); padding: 7.5rem 0 clamp(5rem, 14vh, 9rem); max-width: 760px; z-index: 2; }
+.hero__content { position: relative; margin: 0 1.4rem 0 clamp(1.4rem, 6vw, 6rem); padding: 6.5rem 0 clamp(3.5rem, 10vh, 7rem); max-width: 760px; z-index: 2; }
 .hero__eyebrow { display: flex; align-items: center; gap: 1rem; letter-spacing: .32em; text-transform: uppercase; font-size: .76rem; font-weight: 600; color: var(--blossom-soft); margin-bottom: 1.4rem; }
 .hero__eyebrow .line { width: 48px; height: 1px; background: var(--blossom); }
-.hero__title { color: var(--cream); font-size: clamp(3.6rem, min(11vw, 16vh), 9.5rem); line-height: .9; font-weight: 400; letter-spacing: -.02em; }
+.hero__title { color: var(--cream); font-size: clamp(2.8rem, min(8vw, 12.5vh), 8rem); line-height: .9; font-weight: 400; letter-spacing: -.02em; }
 .hero__row { display: block; overflow: hidden; padding-bottom: .06em; }
 .hero__row:nth-child(2) { padding-left: clamp(1.5rem, 8vw, 7rem); }
 .hero__title .italic { font-style: italic; color: var(--blossom); }
 .split .char { display: inline-block; will-change: transform; }
-.hero__sub { margin-top: 1.8rem; max-width: 460px; font-size: 1.05rem; color: rgba(251,246,240,.85); }
-.hero__cta { margin-top: 2.2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+.hero__sub { margin-top: clamp(1rem, 3vh, 1.8rem); max-width: 460px; font-size: 1.05rem; color: rgba(251,246,240,.85); }
+.hero__cta { margin-top: clamp(1.2rem, 3.5vh, 2.2rem); display: flex; flex-wrap: wrap; gap: 1rem; }
 .hero__scroll { position: absolute; right: clamp(1.4rem, 4vw, 3rem); bottom: 2.4rem; display: flex; flex-direction: column; align-items: center; gap: .8rem; font-size: .7rem; letter-spacing: .3em; text-transform: uppercase; writing-mode: vertical-rl; z-index: 2; }
 .hero__scroll i { width: 1px; height: 64px; background: rgba(255,255,255,.25); position: relative; overflow: hidden; }
 .hero__scroll i::after { content: ""; position: absolute; inset: 0; background: var(--blossom); animation: scrollLine 2.2s var(--ease) infinite; }
