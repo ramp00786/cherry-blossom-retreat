@@ -346,3 +346,28 @@ h3 { font-size: clamp(1.5rem, 2.2vw, 1.9rem); }
 }
 .gallery__intro h2 { font-size: clamp(2.4rem, 4.2vw, 3.8rem); }
 .field input, .field select { height: 52px; }
+
+/* ---------- reviews ---------- */
+.reviews { background: var(--sand); }
+.reviews__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem, 7vw, 7rem); align-items: center; }
+.score { display: flex; align-items: baseline; gap: .4rem; font-family: var(--serif); color: var(--ink); line-height: 1; }
+.score__num { font-size: clamp(5rem, 12vw, 9rem); font-weight: 500; }
+.score__of { font-size: 2rem; color: var(--muted); }
+.score__label { margin: .8rem 0 2.2rem; color: var(--blossom-2); font-weight: 600; letter-spacing: .04em; }
+.bars { list-style: none; display: grid; gap: .9rem; max-width: 460px; }
+.bars li { display: grid; grid-template-columns: 130px 1fr 40px; align-items: center; gap: 1rem; font-size: .9rem; }
+.bars i { height: 6px; border-radius: 6px; background: rgba(12,26,23,.1); position: relative; overflow: hidden; }
+.bars i::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--blossom), var(--blossom-2)); border-radius: inherit; transform-origin: left; transform: scaleX(var(--p, 0)); transition: transform 1.6s var(--ease); }
+.bars.is-in i::after { --p: var(--v); }
+.bars b { font-weight: 600; text-align: right; }
+.reviews__quotes { display: grid; gap: 1.2rem; }
+.quote { background: #fff; border-radius: var(--radius); padding: 1.8rem 2rem; box-shadow: 0 24px 50px -36px rgba(12,26,23,.4); position: relative; }
+.quote::before { content: "“"; position: absolute; top: -.6rem; right: 1.4rem; font-family: var(--serif); font-size: 6rem; line-height: 1; color: var(--blossom-soft); }
+.quote p { font-family: var(--serif); font-size: clamp(1.3rem, 2vw, 1.6rem); line-height: 1.35; color: var(--ink); position: relative; }
+.quote cite { display: block; margin-top: .8rem; font-style: normal; font-size: .85rem; color: var(--muted); letter-spacing: .04em; }
+.reviews__src { font-size: .82rem; color: var(--muted); }
+.reviews__src a { text-decoration: underline; }
+.landmarks { font-size: 1rem !important; line-height: 1.7; color: var(--muted); }
+.footer__credits { margin-top: 1.4rem; font-size: .72rem; opacity: .45; line-height: 1.7; }
+.footer__credits a { text-decoration: underline; }
+@media (max-width: 900px) { .reviews__grid { grid-template-columns: 1fr; } .bars li { grid-template-columns: 110px 1fr 36px; } }

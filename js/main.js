@@ -326,6 +326,24 @@
     gsap.from($(".stack__img img", card), { scale: 1.3, ease: "none", scrollTrigger: { trigger: card, start: "top bottom", end: "top top", scrub: true } });
   });
 
+  /* ---------------- Reviews ---------------- */
+  const scoreEl = $(".score__num");
+  if (scoreEl) {
+    const target = parseFloat(scoreEl.dataset.count);
+    const obj = { v: 0 };
+    ScrollTrigger.create({
+      trigger: ".reviews", start: "top 70%", once: true,
+      onEnter: () => {
+        gsap.to(obj, { v: target, duration: 2, ease: "power3.out", onUpdate: () => { scoreEl.textContent = obj.v.toFixed(1); } });
+        $(".bars").classList.add("is-in");
+      }
+    });
+    gsap.from(".quote", {
+      autoAlpha: 0, y: 50, rotate: 1.5, stagger: 0.15, duration: 1, ease: "power3.out",
+      scrollTrigger: { trigger: ".reviews__quotes", start: "top 80%" }
+    });
+  }
+
   /* ---------------- Booking section ---------------- */
   gsap.from(".platform", {
     autoAlpha: 0, y: 50, stagger: 0.1, duration: 1, ease: "power3.out",

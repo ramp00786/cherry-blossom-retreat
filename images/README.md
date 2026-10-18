@@ -1,7 +1,7 @@
 # Photos
 
 Put the property photos in this folder using these exact file names (JPG, ideally 1600–2400px wide).
-Until a file is added, the site shows a soft blossom-gradient placeholder in its place.
+Property photos come from the Booking.com and Agoda listings; Explore Kollam photos are from Wikimedia Commons (credited in the footer). If a file is missing, the site shows a soft blossom-gradient placeholder instead.
 
 | File | Where it appears |
 |---|---|
@@ -11,7 +11,7 @@ Until a file is added, the site shows a soft blossom-gradient placeholder in its
 | `room-1.jpg` | Rooms — Deluxe Double Room |
 | `room-2.jpg` | Rooms — Family Room |
 | `room-3.jpg` | Rooms — Garden View Room |
-| `gallery-1.jpg` … `gallery-8.jpg` | Horizontal gallery (front view, bedroom, sit-out, bathroom, dining, garden, backwaters, sunset) |
+| `gallery-1.jpg` … `gallery-9.jpg` | Horizontal gallery (courtyard, entrance, rooms, bathrooms, dining, mango-tree courtyard) |
 | `explore-ashtamudi.jpg` | Explore — Ashtamudi Lake |
 | `explore-munroe.jpg` | Explore — Munroe Island |
 | `explore-beach.jpg` | Explore — Kollam Beach / Thangassery |
