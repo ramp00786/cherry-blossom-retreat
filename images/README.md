@@ -18,3 +18,10 @@ Property photos come from the Booking.com and Agoda listings; Explore Kollam pho
 | `explore-beach.jpg` | Explore — Kollam Beach / Thangassery |
 | `explore-jatayu.jpg` | Explore — Jatayu Earth's Center |
 | `explore-palaruvi.jpg` | Explore — Palaruvi Falls |
+
+## Section backgrounds
+
+| File | Where it appears | Source |
+|---|---|---|
+| `bg-blossom.jpg`, `bg-blossom-sm.jpg` | "A day here" timeline and Booking section | [Branches-close-blossom](https://commons.wikimedia.org/wiki/File:Branches-close-blossom_(Unsplash).jpg) by Ian Schneider — CC0 |
+| `bg-blossom-light.jpg`, `bg-blossom-light-sm.jpg` | Reviews section | [Cherry Blossom](https://commons.wikimedia.org/wiki/File:Cherry_Blossom_(Unsplash).jpg) by Simon Launay — CC0 |
