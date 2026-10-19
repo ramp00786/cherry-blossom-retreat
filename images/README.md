@@ -6,12 +6,13 @@ Property photos come from the Booking.com and Agoda listings; Explore Kollam pho
 | File | Where it appears |
 |---|---|
 | `hero.jpg` | Social share preview (og:image) |
-| `about-1.jpg` | About — large photo (exterior / front of the house) |
+| `about-1.jpg` | About — large photo (house at dusk, sent by the owner) |
+| `gallery-evening.jpg` | Gallery item 01 — house at night (sent by the owner) |
 | `about-2.jpg` | About — small overlapping photo (interior) |
 | `room-1.jpg` | Rooms — Deluxe Double Room |
 | `room-2.jpg` | Rooms — Family Room |
 | `room-3.jpg` | Rooms — Garden View Room |
-| `gallery-1.jpg` … `gallery-9.jpg` | Horizontal gallery (courtyard, entrance, rooms, bathrooms, dining, mango-tree courtyard) |
+| `gallery-1.jpg` … `gallery-10.jpg` | Horizontal gallery (courtyard, entrance, rooms, bathrooms, dining, mango-tree courtyard) |
 | `explore-ashtamudi.jpg` | Explore — Ashtamudi Lake |
 | `explore-munroe.jpg` | Explore — Munroe Island |
 | `explore-beach.jpg` | Explore — Kollam Beach / Thangassery |
