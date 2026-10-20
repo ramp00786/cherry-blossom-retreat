@@ -401,3 +401,29 @@ h3 { font-size: clamp(1.5rem, 2.2vw, 1.9rem); }
   .reviews { background-image: linear-gradient(to bottom, rgba(241,231,218,.9), rgba(241,231,218,.78) 50%, rgba(241,231,218,.92)), url("../images/bg-blossom-light-sm.jpg"); }
   .book { background-image: radial-gradient(ellipse at 50% 120%, rgba(107,46,69,.78) 0%, rgba(42,26,46,.88) 45%, rgba(12,26,23,.94) 80%), url("../images/bg-blossom-sm.jpg"); }
 }
+
+/* ---------- mobile fixes (phones only; desktop untouched) ---------- */
+.gallery__hint { display: none; }
+@media (max-width: 768px) {
+  /* gallery: swipe carousel instead of pinned horizontal scroll */
+  .gallery__pin { height: auto; flex-direction: column; align-items: stretch; overflow: visible; padding: 5rem 0 4.5rem; }
+  .gallery__intro { width: auto; padding: 0 1.25rem 2rem; box-shadow: none; align-self: auto; background: none; }
+  .gallery__intro p.gallery__hint { display: block; margin-top: .8rem; font-size: .85rem; color: var(--blossom-2); font-weight: 600; }
+  .gallery__progress { margin-top: 1.2rem; }
+  .gallery__track { transform: none !important; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 1rem; padding: 0 1.25rem 1rem; align-items: center; }
+  .gallery__track::-webkit-scrollbar { display: none; }
+  .g-item, .g-item--tall { flex: 0 0 auto; scroll-snap-align: center; transform: none !important; }
+  .g-item { width: 84vw; height: auto; aspect-ratio: 4 / 3; }
+  .g-item--tall { width: 68vw; height: auto; aspect-ratio: 3 / 4; }
+  .g-item img { transform: none !important; }
+
+  /* about: bigger photos */
+  .about__media { height: 128vw; max-height: 640px; }
+  .frame--tall { width: 82%; height: 84%; }
+  .frame--small { width: 52%; height: 42%; border-width: 6px; }
+
+  /* explore: plain stacked cards (no sticky overlap / darkening) */
+  .stack { gap: 1.5rem; }
+  .stack__card { position: relative; top: auto; min-height: 0; transform: none !important; filter: none !important; }
+  .stack__img { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
+}

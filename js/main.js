@@ -21,7 +21,13 @@
     };
     if (cfg.address) set("address", cfg.address);
     if (cfg.timings) set("timings", cfg.timings);
-    set("phone", cfg.phoneDisplay || cfg.phone || "+91 XXXXX XXXXX", cfg.phone ? `tel:+${cfg.phone}` : "#contact");
+    if (cfg.phones && cfg.phones.length) {
+      $$('[data-config="phone"]').forEach(el => {
+        el.parentElement.innerHTML = cfg.phones.map(ph => `<a href="tel:+${ph.digits}">${ph.display}</a>`).join("<br />");
+      });
+    } else {
+      set("phone", cfg.phoneDisplay || cfg.phone || "+91 XXXXX XXXXX", cfg.phone ? `tel:+${cfg.phone}` : "#contact");
+    }
     if (cfg.email) set("email", cfg.email, `mailto:${cfg.email}`);
     else $$('[data-config="email"]').forEach(el => el.closest("li")?.remove());
     const wa = $("#whatsappFab");
@@ -278,7 +284,17 @@
   const track = $("#galleryTrack");
   const pin = $(".gallery__pin");
   const mm = gsap.matchMedia();
-  mm.add("(min-width: 0px)", () => {
+  mm.add("(max-width: 768px)", () => {
+    // phones: native swipe carousel (see CSS); keep the progress bar in sync
+    const onScroll = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      $("#galleryProgress").style.width = (max > 0 ? (track.scrollLeft / max) * 100 : 0) + "%";
+    };
+    track.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => track.removeEventListener("scroll", onScroll);
+  });
+  mm.add("(min-width: 769px)", () => {
     const getDist = () => Math.max(0, track.scrollWidth + $(".gallery__intro").offsetWidth - window.innerWidth);
     const tween = gsap.to(track, {
       x: () => -getDist(), ease: "none",
@@ -316,11 +332,13 @@
 
   /* ---------------- Stacked explore cards ---------------- */
   const cards = $$(".stack__card");
-  cards.forEach((card, i) => {
-    if (i === cards.length - 1) return;
-    gsap.to(card, {
-      scale: 0.9 + i * 0.015, filter: "brightness(.55)", ease: "none",
-      scrollTrigger: { trigger: cards[i + 1], start: "top bottom", end: "top 12%", scrub: true }
+  mm.add("(min-width: 769px)", () => {
+    cards.forEach((card, i) => {
+      if (i === cards.length - 1) return;
+      gsap.to(card, {
+        scale: 0.9 + i * 0.015, filter: "brightness(.55)", ease: "none",
+        scrollTrigger: { trigger: cards[i + 1], start: "top bottom", end: "top 12%", scrub: true }
+      });
     });
   });
   cards.forEach(card => {
