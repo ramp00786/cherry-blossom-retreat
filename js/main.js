@@ -335,10 +335,13 @@
   mm.add("(min-width: 769px)", () => {
     cards.forEach((card, i) => {
       if (i === cards.length - 1) return;
-      gsap.to(card, {
-        scale: 0.9 + i * 0.015, filter: "brightness(.55)", ease: "none",
-        scrollTrigger: { trigger: cards[i + 1], start: "top bottom", end: "top 12%", scrub: true }
-      });
+      gsap.set(card, { transformOrigin: "50% 0%", willChange: "transform, filter" });
+      gsap.fromTo(card,
+        { scale: 1, filter: "brightness(1)" },
+        {
+          scale: 0.94 + i * 0.01, filter: "brightness(.85)", ease: "power1.inOut",
+          scrollTrigger: { trigger: cards[i + 1], start: "top 90%", end: "top 12%", scrub: 0.8 }
+        });
     });
   });
   cards.forEach(card => {
@@ -357,8 +360,8 @@
         $(".bars").classList.add("is-in");
       }
     });
-    gsap.from(".quote", {
-      autoAlpha: 0, y: 50, rotate: 1.5, stagger: 0.15, duration: 1, ease: "power3.out",
+    gsap.from(".rv-col", {
+      autoAlpha: 0, y: 60, stagger: 0.2, duration: 1.2, ease: "power3.out",
       scrollTrigger: { trigger: ".reviews__quotes", start: "top 80%" }
     });
   }
