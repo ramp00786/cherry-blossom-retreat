@@ -13,8 +13,13 @@ Working rules for future changes are in [CLAUDE.md](CLAUDE.md).
   Apsara Junction, Kollam-691004. Google plus code VJW9+6C6 Ammannada.
 - **Phones:** +91 90373 73688 (business, WhatsApp), +91 96000 19704.
 - **Check-in** from 12:00 PM, **check-out** until 11:00 AM (Agoda listing).
-- **Ratings (Nov 2026):** Google 5.0 (42 reviews), MakeMyTrip 4.7/5,
-  Agoda 9.7/10 "Exceptional" (cleanliness, facilities, service 10; value 9; location 9).
+- **Ratings (18 Nov 2026):** Google 5.0 (67 reviews), MakeMyTrip 4.7/5 (3 reviews),
+  Agoda 9.8/10 "Exceptional", 15 reviews (cleanliness, facilities, service 10;
+  value for money 9.3; location 9.3). Counts are hard-coded in `index.html`
+  (About text + Guest Reviews chips) and must be refreshed by hand.
+- **Google Analytics:** GA4 property "Cherry Blossom Retreat Website",
+  Measurement ID `G-52WY3GKEJ6` (time zone India, INR, data sharing off).
+  gtag snippet is at the top of `<head>` in `index.html`.
 - **Listings:** Booking.com, Agoda (hotel id 91406834), MakeMyTrip, Google Maps.
 - **Nearby:** Kollam Railway Station 3.2 km, Rameshwara Temple 590 m,
   Thangasseri 2.6 km, Infant Jesus Cathedral 4.2 km, RP Mall 5.2 km,
@@ -72,6 +77,13 @@ property's Google, Booking.com, Agoda and MakeMyTrip pages.
    Google count 42 and MakeMyTrip 4.7 added; softer Explore card dimming on
    desktop; all photos re-encoded about 40% smaller.
 9. **18 Nov 2026.** Added this `MEMORY.md` and `CLAUDE.md`.
+10. **18 Nov 2026.** Created the Google Analytics account/property in the
+    user's Google login and added the GA4 tag (`G-52WY3GKEJ6`) to `index.html`;
+    verified hits reach Google from the live site.
+11. **18 Nov 2026.** Guest Reviews shows a review count per platform:
+    Google 67, MakeMyTrip 3, Agoda 15; Agoda score updated 9.7 → 9.8.
+    The user also uploads files to their own server: both changes only
+    touched `index.html`.
 
 ## Decisions and gotchas
 
